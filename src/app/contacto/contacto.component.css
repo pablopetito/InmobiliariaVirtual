@@ -1,0 +1,53 @@
+div {
+    height: 100%;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-image: url("puertoMadero01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    background: rgba(0,0,0, 0.2);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 12px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    min-height: 80px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.boton {
+    margin-left: 85%;
+}
+
+#boton:hover {
+    cursor: pointer;
+}

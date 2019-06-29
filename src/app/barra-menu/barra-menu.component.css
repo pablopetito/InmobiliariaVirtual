@@ -1,0 +1,15 @@
+.barraSuperior {
+    text-align: end;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    width: 100%;
+}
+
+.barraNav {
+    margin-top: 30px;
+}
+
+nav ul li:hover {
+	background-color: darkgrey;
+}

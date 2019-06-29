@@ -1,0 +1,51 @@
+
+<div class="barraSuperior sticky-top pr-4">(011) 4911.4060 | 4912.0183 | 11.5490.0582 | inmobiliaria@petito.com.ar</div>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+ 
+  <img src="http://www.petito.com.ar/Imagenes/logoPetitoTrans300x140.png"  
+        alt="PETITO inmobiliaria" width="230" height="80">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Servicios<span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Propiedades
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">En Venta</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">En Alquiler</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Otros Negocios</a>
+            </div>
+            </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Tasacion<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/usuarios']">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        </li>
+      </ul>
+
+      <button type="button" class="btn btn-danger btn-sm">Ingresar</button>
+      
+    </div>
+  </nav>

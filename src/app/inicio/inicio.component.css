@@ -1,0 +1,34 @@
+.fondoInicio {
+            background-image: url('Ciudad-2optimiza.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+}
+
+.posicionTitulo-derch {
+    text-align: center; 
+}
+
+.fondoTitulo-1 {
+    background-color: rgba(255,255,255,0.5);
+}
+.tamañoLetra-1 {
+    font-size: 2.5rem;
+}
+
+.letraAnton {
+    font-family: 'Anton', sans-serif;
+}
+
+.texto-borde {
+    -webkit-text-stroke: 1px white;
+    color: black; 
+  }
+
+.texto-borde-2 {
+    -webkit-text-stroke: 1px white;
+    color: brown; 
+  }
+
+.textoColor-White {
+    color: black;
+}
