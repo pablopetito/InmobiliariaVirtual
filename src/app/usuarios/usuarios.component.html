@@ -1,9 +1,17 @@
 <h1 class="text-center"> USUARIOS</h1>
 
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let item of user">
-  <h6>Nombre: {{item.nombre}}</h6>
-  <h6>Apellido: {{item.Apellido}}</h6>
-  <a href="#">Leer mas ...</a>
+  <li class="list-group-item" *ngFor="let tarea of tareas, index as i">
+  <h6>Titulo: {{tarea.titulo}}</h6>
+  <h6>Descripcion: {{tarea.descripcion}}</h6>
+ <!-- <a [routerLink]="['/detalleUser',i]">Leer mas ...</a> -->
+  </li>
+</ul>
+<ul class="list-group">
+  <li class=" list-group-item" *ngFor="let tarea of tareas | async">
+    <h4>{{tarea.fecha}}</h4>
+    <h5>{{tarea.titulo}}</h5>
+    <h6>{{tarea.descripcion}}</h6>
+    <h6>{{tarea.responsable}}</h6>
   </li>
 </ul>

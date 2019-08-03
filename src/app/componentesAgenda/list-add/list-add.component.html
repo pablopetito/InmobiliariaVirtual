@@ -1,0 +1,7 @@
+<form (ngSubmit)="agregar()">
+  <input type="text" placeholder="Ingresa Fecha" name="fecha" class="form-control" [(ngModel)]="item.fecha">
+  <input type="text" placeholder="Ingresa titulo" name="titulo" class="form-control" [(ngModel)]="item.titulo">
+  <input type="text" placeholder="Ingresa descripcion" name="descripcion" class="form-control" [(ngModel)]="item.descripcion">
+  <input type="text" placeholder="Ingresa responsable" name="responsable" class="form-control" [(ngModel)]="item.responsable">
+  <button class="btn btn-warning" type="submit">Agregar</button>
+</form>
