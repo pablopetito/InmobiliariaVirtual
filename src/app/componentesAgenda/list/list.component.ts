@@ -10,14 +10,34 @@ export class ListComponent implements OnInit {
 
   tareas:any;
 
+  editarTarea: any = {
+    fecha: '',
+    titulo: '',
+    descripcion: '',
+    responsable: ''
+  };
+
   constructor(private conexion:UsersService) { 
 
-      this.conexion.listaTareas().subscribe(tarea=>{ this.tareas = tarea;
-      console.log(this.tareas)});
+      this.conexion.listaTareas().subscribe(tarea=>{
+       this.tareas = tarea;
+   });
   }
 
 
   ngOnInit() {
+  }
+
+  eliminar(tareaElim) {
+    this.conexion.eliminarTarea(tareaElim);
+  }
+
+  editar(tareaEditar) {
+    this.editarTarea = tareaEditar;
+  }
+
+  agregarItemEditado(){
+    this.conexion.editaTarea(this.editarTarea)
   }
 
 }

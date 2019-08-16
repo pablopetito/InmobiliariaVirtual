@@ -1,3 +1,41 @@
 <div class="alert alert-warning" role="alert" *ngFor="let tarea of tareas">
-  {{tarea.fecha}} - {{tarea.titulo}} - {{tarea.id}} - {{tarea.descripcion}} - {{tarea.responsable}}
+  {{tarea.fecha}} - {{tarea.titulo}} - {{tarea.id}} - {{tarea.descripcion}} - {{tarea.responsable}} 
+  
+  <div class="float-right" (click)="eliminar(tarea)">
+    <i class="far fa-trash-alt"></i> <!-- icono papelera -->
+  </div>
+  
+  <div class="float-right mx-3" (click)="editar(tarea)" data-toggle="modal" data-target="#exampleModal">
+    <i class="fas fa-pencil-alt "></i> <!-- icono editar -->
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form (ngSubmit)="agregarItemEditado()">
+          <input type="text" placeholder="Ingresa Fecha" name="fecha" class="form-control" [(ngModel)]="editarTarea.fecha">
+          <input type="text" placeholder="Ingresa titulo" name="titulo" class="form-control" [(ngModel)]="editarTarea.titulo">
+          <input type="text" placeholder="Ingresa descripcion" name="descripcion" class="form-control" [(ngModel)]="editarTarea.descripcion">
+          <input type="text" placeholder="Ingresa responsable" name="responsable" class="form-control" [(ngModel)]="editarTarea.responsable">
+          <button class="btn btn-warning" type="submit">Guardar Cambios</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
